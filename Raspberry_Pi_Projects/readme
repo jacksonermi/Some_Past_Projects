@@ -1,1 +1,7 @@
 
+game.py is a childrens game developed on a raspberry pi designed as a learning aid for young students. Using the LED sensor hat on the raspberry pi, it shows different 
+shapes and spellings and prompts the user to choose the correct spelling using the joystick on the Pi. There are several levels and scores are tallied throughout play
+where upon completion the final score is expressed. 
+
+joystick.py is just a quick little project I did to change the location of the lit diode using the joystick on the raspberry pi. Moves it one space depending on the 
+direction pressed on the joystick/user.
