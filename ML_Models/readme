@@ -1,1 +1,6 @@
 
+ML model designed to correctly predict type of bean. Cleans dataset and samples, balances dataset, finds optimal number of features using different numbers of PCA
+components and LogsiticRegression models (done using pipeline/gridsearch). Once the optimal number of features is found, it trains and tests the logistic regression 
+model and prints a classification report.
+
+Using the dry bean dataset from UCI.
