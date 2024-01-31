@@ -1,4 +1,4 @@
-------------------------------------------------------------------------Project----------------------------------------------------------------------------------
+------------------------------------------------------------------------Project-------------------------------------------------------------------------------
 
 1. What does the project do?
 The project demonstrates a volumized container as a means to host a website and machine learning model which users can access and gain accurate predictions based on the upload of a csv file. However, this is only one of the endpoints in our API, there also exists three other. One for printing the classfiication report of the test dataset, one for printing the confusion matrix of the dataset, and one for manually inputting a datapoint as opposed to using a csv file. 
