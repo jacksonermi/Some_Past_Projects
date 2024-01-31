@@ -20,6 +20,7 @@ You can contact me at jackson.ermi@gmail.com but here is a brief description of 
     *  Bean_mdl_project.ipynb: The notebook we used to train our models
     *  bean_mdl.pkl: our trained mdl
     *  requirements.txt: Has a list of dependencies that are to be installed on the container.
+    *  test_ds.csv: Test data you can use as input to the ML model. 
 
 6. Who maintains and contributes to the project?
 This project is officially complete, it was more of a technique to aid us in our studies as we train to become more well rounded and capable engineers as opposed to a system that will be deployed in an actual work environment. That being said, it's a great tool to refer to as guideline on how to 
