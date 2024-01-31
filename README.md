@@ -5,3 +5,6 @@ my proficiency with machine learning algorithims.
 
 Link to the Defend the Republic Competition website for more information on the project. 
 https://sites.google.com/lehigh.edu/dtr2023b/
+
+Link to our DTR repository.
+https://github.iu.edu/DTR/dtr/wiki
