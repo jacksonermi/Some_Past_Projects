@@ -1,0 +1,79 @@
+openapi: 3.0.0
+info:
+  version: '0.1'
+  title: Bean Predictor
+  description: Predicts bean type given a set of features.
+  
+paths:
+  /classification:
+    get:
+      tags:
+        - REPORT
+      operationId: src.classification.my_classification
+      description: Returns classification report of bean model
+      responses:
+        '200':
+          description: 'Success'
+
+  /confusion:
+    get:
+      tags:
+        - MATRIX
+      operationId: src.confusion.my_confusion
+      description: Returns confusion matrix of bean model
+      responses:
+        '200':
+          description: 'Success'
+
+  /predict/{id}:
+    get:
+      tags:
+        - PRED
+      operationId: src.prediction.bean_prediction
+      description: Returns the bean type prediction given a set of 16 feature inputs
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: array
+            items:
+              type: number
+            minItems: 1
+          style: simple
+          explode: true
+        - in: query
+          name: metadata
+          schema:
+            type: boolean
+      responses:
+        '200':
+          description: 'Success'
+  /predict/<filename>:
+    post:
+      tags:
+        - PREDFILE
+      summary: Generates a prediction using an uploaded file
+      operationId: src.file_prediction.file_prediction
+      parameters:
+        - name: filename
+          in: query
+          description: filename to be uploaded
+          required: true
+          schema:
+            type: string
+      responses:
+        '405':
+          description: Invalid input
+      requestBody:
+        content:
+          multipart/form-data:
+            schema:
+              type: object
+              properties:
+                file:
+                  type: string
+                  format: binary
+
+servers:
+  - url: 'http://localhost:8080/e222'

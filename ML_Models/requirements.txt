@@ -1,0 +1,5 @@
+Flask
+connexion[swagger-ui]
+joblib
+scikit-learn==0.24.1
+pandas
