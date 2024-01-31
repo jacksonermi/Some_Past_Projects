@@ -12,8 +12,9 @@ This depends on how you intend to use the project. If you intend on looking at i
 4. Where can users get help with the project?
 You can contact me at jackson.ermi@gmail.com but here is a brief description of some of the files in the project:
 
-    *  Dockerfile: Creates the container. Boots a new os (in our case) and exposes the port for the container to reference.
-    *  Makefile: Creates a list of user defined functions that can be used to run multiple lines of bash(console) commands.
+    *  /src: Contains a list of python functions that could be used as endpoints, for this project, focus on the file_prediction.py , prediction.py , confusion.py , and classification.py 
+    *  Dockerfile: Creates the container. Boots a new os (in our case), installs python and other depedancies listed in requirements.txt, and exposes the port for the container to reference.
+    *  Makefile: Creates a list of user defined functions that can be used to run multiple lines of bash(console) commands. 
     *  Server.py: Python file that loads our api and maps endpoints(does this through the master.yml file and the Flask library).
     *  master.yml: Defines the endpoints of our api
     *  Bean_mdl_project.ipynb: The notebook we used to train our models
