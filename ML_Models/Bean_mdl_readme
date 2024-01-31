@@ -4,3 +4,6 @@ components and LogsiticRegression models (done using pipeline/gridsearch). Once 
 model and prints a classification report.
 
 Using the dry bean dataset from UCI.
+
+If you're looking for a more nuanced description of the other files in this repo, there is another readme in this directory containing a description of each of the files
+and how they interact.
