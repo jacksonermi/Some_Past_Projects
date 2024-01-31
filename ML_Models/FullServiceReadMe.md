@@ -12,13 +12,13 @@ This depends on how you intend to use the project. If you intend on looking at i
 4. Where can users get help with the project?
 You can contact me at jackson.ermi@gmail.com but here is a breif description of some of the files in the project:
 
-Dockerfile: Creates the container. Boots a new os (in our case) and exposes the port for the container to reference.
-Makefile: Creates a list of user defined functions that can be used to run multiple lines of bash(console) commands.
-Server.py: Python file that loads our api and maps endpoints(does this through the master.yml file and the Flask library).
-master.yml: Defines the endpoints of our api
-Bean_mdl_project.ipynb: The notebook we used to train our models
-bean_mdl.pkl: our trained mdl
-requirements.txt: Has a list of dependencies that are to be installed on the container.
+a. Dockerfile: Creates the container. Boots a new os (in our case) and exposes the port for the container to reference.
+b. Makefile: Creates a list of user defined functions that can be used to run multiple lines of bash(console) commands.
+c. Server.py: Python file that loads our api and maps endpoints(does this through the master.yml file and the Flask library).
+d. master.yml: Defines the endpoints of our api
+e. Bean_mdl_project.ipynb: The notebook we used to train our models
+f. bean_mdl.pkl: our trained mdl
+g. requirements.txt: Has a list of dependencies that are to be installed on the container.
 
 6. Who maintains and contributes to the project?
 This project is officially complete, it was more of a technique to aid us in our studies as we train to become more well rounded and capable engineers as opposed to a system that will be deployed in an actual work environment. That being said, it's a great tool to refer to as guideline on how to 
